@@ -1,0 +1,7 @@
+timestamp,type,summary,owner,impact
+2026-06-29T10:00:00Z,detect,Checkout 500 errors detected by synthetic monitor,sre,customers could not complete checkout
+2026-06-29T10:04:00Z,triage,Root cause appears to be a misconfigured payment retry policy,platform,
+2026-06-29T10:12:00Z,mitigation,Rollback completed and error rate returned to baseline,platform,
+2026-06-29T10:30:00Z,action,Add alert for payment authorization failures,sre,
+2026-06-29T10:35:00Z,action,Document rollback runbook for checkout service,platform,
+
