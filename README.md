@@ -1,19 +1,12 @@
 # Postmortem Drafter
 
-<p align="center">
-  <img src="assets/readme-cover.svg" alt="Postmortem Drafter cover" width="100%" />
-</p>
+Draft incident postmortems from timeline CSV or JSONL exports. In practice it is a narrow guardrail for incident response, ownership, release risk, and follow-up notes: one command, a concrete report, and very little ceremony.
 
-Draft incident postmortems from timeline CSV or JSONL exports.
+## A quick look
 
-## Working notes
+![Postmortem Drafter cover](assets/readme-cover.svg)
 
-- quick local checks around incident writing
-- small CI jobs where a readable report is enough
-- review workflows that need deterministic output
-- examples based on `examples/timeline.csv`
-
-## Install
+## Start here
 
 ```bash
 git clone https://github.com/mertefekurt/postmortem-drafter.git
@@ -23,13 +16,13 @@ source .venv/bin/activate
 python -m pip install -e ".[dev]"
 ```
 
-## Use
+Run:
 
 ```bash
 postmortem-drafter examples/timeline.csv
 ```
 
-## Files
+## Files with the most context
 
 ```text
 .github/        CI workflow
